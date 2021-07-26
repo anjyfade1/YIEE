@@ -1,0 +1,102 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Title */
+
+.title{
+    height: 50vh;
+    background-image: url('../ASSETS FOLDER/server-2160321_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.sub-T h2{
+    margin: 0px;
+    padding: 120px 0px 0px;
+    font-size: 60px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.sub-T .box{
+    border:4px solid #6F7498;
+    width: 90px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* Research */
+
+.unknown{
+    padding: 24px 48px;
+}
+
+/* .research-works{
+    display: flex;
+    flex: 50%;
+    padding: 24px 48px;
+} */
+
+.research-works{
+    display: flex;
+    flex: 50%;
+    padding: 24px 48px;
+}
+
+.research-image{
+    align-self: center; 
+    padding: 0px 13px;
+}
+
+.research-image img{
+    width: 100%;
+}
+
+ .img{
+    width: 90%;
+    margin: auto;
+} 
+
+.research-work{
+    text-align: center;
+    /* padding: 8px 13px; */
+}
+
+.research-work h2{
+    text-decoration: underline;
+    padding: 14px 8px;
+}
+
+.research-work p{
+    line-height: 27px;
+    color: #212121;
+    padding: 14px 25px;
+}
+
+@media only screen and (max-width: 900px){
+    .sub-T h2{
+        margin: 0px;
+        padding: 100px 0px 0px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .research-works{
+       flex-wrap: wrap;
+       padding: 24px 0px;
+    }
+
+    .img{
+        width: 100%;
+        margin: auto;
+    } 
+
+}

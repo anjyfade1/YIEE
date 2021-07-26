@@ -1,0 +1,125 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Banner */
+
+.banner{
+    /* padding: 0px; */
+    margin: 0px;
+}
+
+.banner-image{
+    background-image: url('../ASSETS FOLDER/Banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate3d(0px, 0px, 0px);
+    /* transition: all 5s ease; */
+    height: 100vh;
+}
+
+.bannner-links{
+    padding: 34px 0px 32px;
+    text-align: center;
+    font-size: 18px;
+    color: #6F7498;
+    font-weight: 700;
+    word-spacing: 2px;
+}
+
+.bannner-links span{   
+    padding-top: 10px;
+}
+
+.bannner-links span a{
+    text-decoration: underline;
+}
+
+.span1{
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.span2{
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* about-me */
+
+.about-me{
+    background-color: rgba(232,240,240,1);
+    text-align: center;
+    margin: 0px;
+    padding: 24px 50px;
+    color: #212121;
+    line-height: 25px;
+}
+
+/* Works */
+
+.work-section{
+    padding: 24px 50px;
+    text-align: center;
+}
+
+.works{
+    display: flex;
+    flex: 25%;
+}
+
+.works img{
+    width: 100%;
+}
+
+.work{
+    padding: 0px 13px;
+    color: #212121;
+}
+
+.work h2{
+    text-decoration: underline;
+}
+
+.work p{
+    padding: 14px 15px;
+    margin: 0px 0px 0px 20px;
+    font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .bannner-links{
+        padding: 34px 20px 45px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .about-me{
+        padding: 24px 20px;
+    }
+
+    .work-section{
+        padding: 24px 0px;
+    }
+
+    .works{
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .menu-open{
+        opacity: 1;
+        transition: 0.3s;
+        transform: translateX(0px);
+        pointer-events: all;
+        width: 75%;
+    }
+}

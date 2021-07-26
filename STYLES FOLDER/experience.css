@@ -1,0 +1,137 @@
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Title */
+
+.title{
+    color: #6F7498;
+    font-size: 34px;
+    padding: 48px;
+    text-align: center;
+}
+
+.title h2{
+    margin: 0px 0px 18px;
+}
+
+.title .box{
+    border:2px solid #6F7498;
+    width: 90px;
+    margin: auto;
+}
+
+.cl-title{
+    padding: 24px 0px;
+}
+
+/* Experience */
+
+.exp-works{
+    padding: 24px 50px;
+}
+
+.exp-work{
+    display: flex;
+    flex: 50%;
+}
+
+.exp-image{
+    padding: 23px 13px;
+    align-self: flex-end;
+}
+
+.exp-image img{
+    width: 100%;
+}
+
+.img{
+    width: 50%;
+    /* align-self: center; */
+}
+
+.exp-work-details{
+    padding: 8px 21px;
+    color: #212121;
+    line-height: 27px;
+}
+
+.exp-work-details h2{
+    text-align: center;
+    font-size: 24px;
+    /* padding: 0px 135px; */
+    line-height: 35px;
+}
+
+
+@media only screen and (max-width: 1248px) {
+    .hamburger{
+        background: #212121;
+    }
+    
+    .hamburger::before, .hamburger::after{
+        background: #212121;
+    }
+
+    .brand a{
+        color: #212121;
+    }
+
+    .exp-image{
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    
+    .title{
+        color: #6F7498;
+        font-size: 24px;
+        padding: 48px;
+        text-align: center;
+    }
+
+    .exp-works{
+        padding: 24px 0px;
+    }
+
+    .exp-work{
+        flex-wrap: wrap;
+    }
+
+    .exp-image{
+        text-align: center;
+    }
+
+    .exp-image img{
+        width: 50%;
+    }
+
+    .exp-image-2{
+        order: 1;
+    }
+
+    .det{
+        order: 2;
+    }
+
+    .img{
+        width: 60%;
+        margin: auto;
+    }
+}
