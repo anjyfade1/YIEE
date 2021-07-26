@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+
+    <!-- Utility style -->
+    <link rel="stylesheet" href="../STYLES FOLDER/style.css">
+
+    <!-- Research page styling -->
+    <link rel="stylesheet" href="../STYLES FOLDER/research.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="group">
+        <div class="content">
+            <div class="search-bar">
+                <input type="text" class="search-bar_input" placeholder="Search this site" aria-label="submit search">
+                <button class="search-bar_submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="brand mobile">
+            <a href="">Rajvardhan Oak</a>
+        </div>
+    </div>
+    <div class="left-section">
+        <div class="navbar">
+            <div class="logo">
+                <div class="brand-name desktop">
+                    <a href="">Rajvardhan Oak</a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="./experience.html"  >experience</a></li>
+                <li><a href="./achievement.html">achievements</a></li>
+                <i class="fa fa-chevron-down dropbtn" onclick="myFunction()" ></i><li><a href="#" class="current">research</a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <ul>
+                            <li><a href="./SecML.html" >SecML</a></li>
+                            <li><a href="./SecPriv.html">SecPriv</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="title" id="parallax" >
+            <div class="sub-T">
+                <h2>Research</h2>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="unknown"></div>
+        <section class="research">
+            <div class="research-works">
+                <div class="research-work">
+                    <div class="research-image img">
+                        <img  src="../ASSETS FOLDER/matrix-3109378_1920.jpg" alt="matrix">
+                    </div>
+                    <h2>
+                      <a href="./SecML.html"> SecML</a> 
+                    </h2>
+                    <p>
+                        Learn more about my projects at the intersection of machine learning and security. They include applying state-of-the-art ML models to security problems such as phishing, malware, spam and fake news. I have also worked with adversarial machine learning in the text and image domain.
+                    </p>
+                </div>
+                <div class="research-work">
+                    <div class="research-image">
+                        <img src="../ASSETS FOLDER/hacker-3342696_1920.jpg" alt="image">
+                    </div>
+                    <h2> 
+                       <a href="./SecPriv.html"> Security & Privacy </a>
+                    </h2>
+                    <p>
+                        Learn more about my more general projects in security and privacy. Some of them are building cybersecurity infrastructure for non-profits, designing a phishing simulator, open source automatic document redaction, etc. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <p><a href="">Get in touch at [rvoak at berkeley.edu]</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../CONSTANTS FOLDER/script.js"></script>
+    <script src="../CONSTANTS FOLDER/index.js"></script>
+</body>
+</html>

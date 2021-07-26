@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecML</title>
+    
+    <!-- Utility style -->
+    <link rel="stylesheet" href="../STYLES FOLDER/style.css">
+
+    <!-- SecML page styling -->
+    <link rel="stylesheet" href="../STYLES FOLDER/SecML.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="content">
+        <div class="search-bar">
+            <input type="text" class="search-bar_input" placeholder="Search this site" aria-label="submit search">
+            <button class="search-bar_submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="group">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="brand mobile">
+            <a href="">Rajvardhan Oak</a>
+        </div>
+    </div>
+    <div class="left-section">
+        <div class="navbar">
+            <div class="logo">
+                <div class="brand-name desktop">
+                    <a href="">Rajvardhan Oak</a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="./experience.html"  >experience</a></li>
+                <li><a href="./achievement.html">achievements</a></li>
+                <i class="fa fa-chevron-down dropbtn" onclick="myFunction()" ></i> <li><a href="./research.html">research</a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <ul>
+                            <li><a href="#">SecML</a></li>
+                            <li><a href="./SecPriv.html">SecPriv</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="title" id="parallax">
+            <div class="sub-T">
+                <h2>SecML</h2>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="unknown"></div>
+        <div class="SecML">
+            <div class="SecML-works">
+                <div class="SecML-work">
+                    <div class="SecML-image">
+                        <img src="../ASSETS FOLDER/Malware-Hacker-Cyber-Computer-Theft-5027679.jpg" alt="">
+                        <h2>Malware Detection with BERT</h2>
+                    </div>
+                    <div class="SecML-details">
+                        <p class="subtitle" >
+                           <b>  Advisor: Prof. Dawn Song </b> <br>
+                              <em> Collaboration with Palo Alto Networks </em></p>
+                        <p>[<a href="https://dl.acm.org/doi/10.1145/3338501.3357374">Paper</a>] [Code] [<a href="https://docs.google.com/presentation/d/19g-8dHUd0zyQIlhOqH9SSa5drUihCHg1t2HfmjxIrLI/edit">Slides</a>]</p>
+                        <p>
+                            The goal was to detect if an application was malware based on sequence of API calls made to the OS. We explored several supervised methods (logistic regression, deep neural networks, SVM, LSTM and decision trees) as well as unsupervised models (clustering, autoencoders, DAGMM) but none of them showed reasonable results in a high-imbalance scenario (5% malware). Finally, we developed a technique based on BERT, which leverages cross-domain transfer learning and shows an F-1 score of 0.92 with only 2% malware in the training data.
+                        </p>
+                    </div> 
+                </div>
+
+                <div class="SecML-work">
+                    <div class="SecML-image img">
+                        <img src="../ASSETS FOLDER/live.staticflickr.com171024672846866_3272ea587d_z.jpg" alt="">
+                        <h2>Lifelong Anomaly Detection</h2>
+                    </div>
+                    <div class="SecML-details">
+                        <p class="subtitle" > <b> Advisor: Prof. Dawn Song </b> </p>
+                        <p>[<a href="https://dl.acm.org/doi/10.1145/3319535.3363226">Paper</a>] [Code] [<a href="https://docs.google.com/presentation/d/16bqQcWHmjt3jyt0d-F3ZSuhhyd8pqOAhwoS0k5ltTWI/edit">Slides</a>]</p>
+                        <p>
+                            We developed a method called unlearning which facilitates model update without retraining, and can improve model performance by maximizing loss for false negatives. We propose a new loss function which incorporates learning rate shrinkage and Elastic Weight Consolidation (EWC) so that the model parameters change according to false positive and negative information. We validated the unlearning approach with three models: LSTM, regression and autoencoders to show that our method is model agnostic. We were able to reduce up to 77.3% false positives and 76.6% false negatives. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="SecML-work">
+                    <div class="SecML-image gmi">
+                        <img src="../ASSETS FOLDER/fake-news-media-disinformation-press-politics.jpg" alt="">
+                        <h2>Fake News Detection</h2>
+                    </div>
+                    <div class="SecML-details">
+                        <p class="subtitle" >
+                           <b> Advisor: Prof. Hany Farid and Dr. Sadia Afroz </b><br>
+                           <em> Collaboration with Facebook AI Research </em> 
+                        </p>
+                        <p>[Paper] [Code] [Slides]</p>
+                        <p>
+                            We leveraged language models to contribute an open source dataset consisting of 100k AI-generated news articles. We then explored a variety of semantic (function words, readability) and textual features (word embeddings, contextual embeddings) for classification. Applied classifiers such as SVM, Random Forest, Regression and deep neural networks and anomaly detection methods such as autoencoders to identify AI generated content. Our results show that AI generated text can be detected with high F-1 scores of over 90%.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="SecML-work">
+                    <div class="SecML-image">
+                        <img src="../ASSETS FOLDER/Multi-Layer_Neural_Network-Vector.svg1280px-Multi-Layer_Neural_Network-Vector.svg.png" alt="">
+                        <h2>Background Check on Neural Nets</h2>
+                    </div>
+                    <div class="SecML-details">
+                        <p class="subtitle">
+                           <b>  Advisor: Prof. Prateek Mittal </b> <br>
+                            <em> Collaboration with Princeton University </em> 
+                        </p>
+                         <p>[<a href="https://arxiv.org/pdf/2006.14077.pdf">Paper</a>] [Code] [Slides]</p>
+                        <p>
+                            We investigate to what extent the increasing performance of deep neural networks is impacted by background features. In particular, we focus on background invariance (accuracy unaffected by switching background features) and background influence (predictive power of background features itself when foreground is masked). We perform experiments with 32 different neural networks including state-of-the-art models. Our investigations reveal that increasing expressive power of DNNs leads to higher influence of background features, while simultaneously, increases their ability to make correct predictions when background features are altered. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="SecML-work">
+                    <div class="SecML-image">
+                        <img src="../ASSETS FOLDER/fraud-email-attack-mail-online-system-cybercrime-information-access-credit-money-hack-hacker-laptop-malware-password-protection-software-steal-text-graphic-d.jpg" alt="">
+                        <h2>Learning to Automate Social Engineering Resistance (LASER)</h2>
+                    </div>
+                    <div class="SecML-details">
+                        <p class="subtitle" > <b> Advisor: Prof. Dawn Song </b>  <br>
+                            <em> Collaboration with DARPA and Stanford University </em> 
+                        </p>
+                        <p>
+                            We investigate to what extent the increasing performance of deep neural networks is impacted by background features. In particular, we focus on background invariance (accuracy unaffected by switching background features) and background influence (predictive power of background features itself when foreground is masked). We perform experiments with 32 different neural networks including state-of-the-art models. Our investigations reveal that increasing expressive power of DNNs leads to higher influence of background features, while simultaneously, increases their ability to make correct predictions when background features are altered. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p><a href="">Get in touch at [rvoak at berkeley.edu]</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../CONSTANTS FOLDER/script.js"></script>
+    <script src="../CONSTANTS FOLDER/index.js"></script>
+</body>
+</html>

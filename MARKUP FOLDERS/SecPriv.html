@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecPriv</title>
+</head>
+
+<!-- Utility style -->
+<link rel="stylesheet" href="../STYLES FOLDER/style.css">
+
+<!-- Research page styling -->
+<link rel="stylesheet" href="../STYLES FOLDER/SecPriv.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<body>
+    <div class="content">
+        <div class="search-bar">
+            <input type="text" class="search-bar_input" placeholder="Search this site" aria-label="submit search">
+            <button class="search-bar_submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="group">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="brand mobile">
+            <a href="">Rajvardhan Oak</a>
+        </div>
+    </div>
+    <div class="left-section">
+        <div class="navbar">
+            <div class="logo">
+                <div class="brand-name desktop">
+                    <a href="">Rajvardhan Oak</a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="./experience.html"  >experience</a></li>
+                <li><a href="./achievement.html">achievements</a></li>
+                <i class="fa fa-chevron-down dropbtn" onclick="myFunction()" ></i><li><a href="./research.html">research</a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <ul>
+                            <li><a href="./SecML.html" class="">SecML</a></li>
+                            <li><a href="#" class="">SecPriv</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="title" id="parallax">
+            <div class="sub-T">
+                <h2>Security & Privacy</h2>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="unknown"></div>
+        <div class="SecPriv">
+            <div class="SecPriv-works">
+                <div class="SecPriv-work">
+                    <div class="SecPriv-image">
+                        <img src="../ASSETS FOLDER/download.jpg" alt="">
+                        <h2>openRedact</h2>
+                    </div>
+                    <div class="SecPriv-details">
+                        <p class="subtitle" >
+                           <b>  Advisor: Prof. Daniel Aranki </b></p>
+                        <p>
+                            We developed an open source tool for automatic document redaction. We contributed a dataset of 1k+ documents with redactions annotated. We developed a tiered framework for redaction which allows to control the degree of sensitivity of information to be redacted. We trained machine learning models (logistic regression, KNN, MLP) with a variety of features (simple tokenization, BERT, embeddings) to automatically produce redation annotations. Our best model had an F-1 score of 0.88. 
+                        </p>
+                    </div> 
+                </div>
+                <div class="SecPriv-work">
+                    <div class="SecPriv-image img">
+                        <img src="../ASSETS FOLDER/cyber-security-1805632.png" alt="">
+                        <h2>Cyber Security for High Risk Organization</h2>
+                    </div>
+                    <div class="SecPriv-details">
+                        <p class="subtitle" >
+                            <b>  Advisor: Prof. Steve Weber </b> <br>
+                               <em> Collaboration with the Center for Long Term Cybersecurity </em></p>
+                        <p>
+                            I worked with the Citizen Clinic, a division of the the Center for Long Term Cybersecurity (CLTC).  We partnered with non-profits across the world dealing with sensitive issues such as free speech, reproductive rights and land rights for indigenous peoples. These organizations were at risk from cyber attacks by highly capable threat actors and even nation states. We worked with 4 such organizations to assess their cybersecurity infrastructure. We performed vulnerability analysis and threat assessments and provided appropriate recommendations. We also designed device protocols and communication policies so as to minimize risk of cyber attacks. 
+                        </p>
+                    </div> 
+                </div>
+                <div class="SecPriv-work">
+                    <div class="SecPriv-image">
+                        <img src="../ASSETS FOLDER/fraud-email-attack-mail-online-system-cybercrime-information-access-credit-money-hack-hacker-laptop-malware-password-protection-software-steal-text-graphic-d.jpg" alt="">
+                        <h2>Phishing Simulato</h2>
+                    </div>
+                    <div class="SecPriv-details">
+                        <p class="subtitle" >
+                            <b> Advisor: Prof. Steve Weber </b> <br>
+                               <em> Collaboration with the Center for Long Term Cybersecurity </em></p>
+                       <p>
+                        One of the highest cyber risks to any organization is phishing attacks. I developed a phishing sensitivity program to be used internally as well as with our partner non-profit organizations. I leveraged the tool GoPhish and extended it to be installed on an AWS instance. I also developed comprehensive templates for phishing, designed phishing campaigns and conducted awareness trainings for the same.
+                       </p>
+                    </div> 
+                </div>
+                <div class="SecPriv-work">
+                    <div class="SecPriv-image">
+                        <img src="../ASSETS FOLDER/internet-3113279_1920.jpg" alt="">
+                        <h2>Organ Transplant Privacy</h2>
+                    </div>
+                    <div class="SecPriv-details">
+                        <p class="subtitle" >
+                            <b> Personal Project </b></p>
+                       <p>
+                        One of the highest cyber risks to any organization is phishing attacks. I developed a phishing sensitivity program to be used internally as well as with our partner non-profit organizations. I leveraged the tool GoPhish and extended it to be installed on an AWS instance. I also developed comprehensive templates for phishing, designed phishing campaigns and conducted awareness trainings for the same.
+                       </p>
+                    </div> 
+                </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p><a href="">Get in touch at [rvoak at berkeley.edu]</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../CONSTANTS FOLDER/script.js"></script>
+    <script src="../CONSTANTS FOLDER/index.js"></script>
+</body>
+</html>
