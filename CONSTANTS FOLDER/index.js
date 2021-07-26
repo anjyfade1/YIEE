@@ -30,4 +30,9 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function myNav() {
+    document.getElementById("myDrop").classList.toggle("showe");
+    // document.getElementById("myDrop").classList.toggle("content");
+}
+
 
