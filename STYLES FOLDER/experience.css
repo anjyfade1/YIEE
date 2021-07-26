@@ -32,6 +32,7 @@ span{
 
 .title .box{
     border:2px solid #6F7498;
+    background-color: #6F7498;
     width: 90px;
     margin: auto;
 }
