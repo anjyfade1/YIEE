@@ -80,7 +80,7 @@ a{
 .navbar ul{
    padding-top: 5px;
    margin-top: 0px; 
-   cursor: pointer;
+   /* cursor: pointer; */
 }
 
 .navbar ul li {
@@ -189,33 +189,30 @@ a{
     display: block;
 }
 
-.change{
-    color: black;
-}
 
 /* content*/
 
 .content{
-    /* background: none; */
     width: 70vw;
     padding: 1.5rem;
-    /* box-shadow: 0 0 3em rgba(0,0,0,0.15); */
     position: absolute;
-    left: 280px;
-    z-index: 1;
+    left: 350px;
+    /* border: 2px solid red; */
+    /* z-index: 9999; */
     transition: width 300ms ease-in-out;
-    
 }
 
 .search-bar{
     /* border: 2px solid white; */
     display: flex;
-    width: 50%;
+    width: 60%;
     height: 50px;
     margin: auto;
     position: relative;
+    left: 200px;
     overflow: hidden;
     transition: width 300ms ease-in-out;
+
 }
 
 .search-bar_input{
@@ -227,8 +224,10 @@ a{
     top: 0px;
     bottom: 0px;
     left: 0px;
-    width: 90%;
+    /* right: 50px; */
+    width: 100%;
     opacity: 0;
+    /* z-index:1 ; */
 }
 
 .search-bar_input:focus{
@@ -240,17 +239,20 @@ a{
 }
 
 .search-bar_submit{
-    background: white;
-    border: 2px solid white;
+    /* background: white; */
+    /* border: 2px solid white; */
+    background: none;
     border: 0px;
     margin-left: auto;
     transition: background 150ms ease-in-out;
+    z-index: 1;
 }
 
 .search-bar:focus-within{
-   width: 100%;
-   color: black;
-   background: white;
+   /* width: 70%;
+   color: black; */
+   /* background: white; */
+   /* background: blueviolet; */
 }
 
 /* Footer */
@@ -369,8 +371,6 @@ footer{
         left: 50px;
         top: 20px;
         z-index: 1;
-        /* width: 80%;
-        margin: auto; */
         padding: 0px 0px 30px;
     }
     .brand a{
@@ -378,22 +378,30 @@ footer{
         color: #fff;
     }
     .content{
-        /* background: none; */
         width: 70vw;
         padding: 1.5rem;
-        /* box-shadow: 0 0 3em rgba(0,0,0,0.15); */
         position: absolute;
         left: 80px;
         top: -20px;
         z-index: 1;
         transition: width 300ms ease-in-out;
-        
     }
 
   }
      
 
   @media only screen and (max-width: 900px) {
+    .search-bar{
+        /* border: 2px solid white;  */
+        width: 100%;
+        position: relative;
+        left: 0px;
+    
+    }
+   
+     .search-bar_submit{
+       z-index: 1;
+    }
 
       .menu-open{
         opacity: 1;
