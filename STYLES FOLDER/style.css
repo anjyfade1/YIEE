@@ -246,13 +246,14 @@ a{
     margin-left: auto;
     transition: background 150ms ease-in-out;
     z-index: 1;
+    color: #FFF;
+    font-size: 20px;
 }
 
 .search-bar:focus-within{
-   /* width: 70%;
-   color: black; */
-   /* background: white; */
-   /* background: blueviolet; */
+   width: 70%;
+   color: black;
+   background: white;
 }
 
 /* Footer */
